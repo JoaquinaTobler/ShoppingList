@@ -1,0 +1,62 @@
+<!--
+  ~ Copyright (C) 2021 The Android Open Source Project.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="tile_start_order">Order</string>
+    <string name="title_coupons">Coupons</string>
+    <string name="title_entree_menu">Entrees</string>
+    <string name="title_side_menu">Sides</string>
+    <string name="title_accompaniment_menu">Accompaniments</string>
+    <string name="title_checkout">Checkout</string>
+    <string name="start_order">Start Order</string>
+    <style name="cancel">Cancel</style>
+    <string name="subtotal">Subtotal: %s</string>
+    <string name="tax">Tax: %s</string>
+    <string name="total">Total: %s</string>
+    <string name="next">Next</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="submit">Submit Order</string>
+    <string name="send_list">Send List</string>
+    <string name="button">Button</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Image">Image Menu</string>
+    <string name="monday_resume">Monday Resume</string>
+    <string name="tuesday_resume">Tuesday Resume</string>
+    <string name="wednesday_resume">Wednesday Resume</string>
+    <string name="thursday_resume">Thursday Resume</string>
+    <string name="friday_resume">Friday Resume</string>!
+    <string name="shopping_list_monday">INGREDIENTS MONDAY:\n Ingredients lunch: %1$s \n Ingredients dinner: %2$s \n\n </string>
+    <string name="shopping_list_tuesday">INGREDIENTS TUESDAY:\n Ingredients lunch: %1$s \n Ingredients dinner: %2$s \n\n</string>
+    <string name="shopping_list_wednesday">INGREDIENTS WEDNESDAY:\n Ingredients lunch: %1$s \n Ingredients dinner: %2$s \n\n</string>
+    <string name="shopping_list_thursday">INGREDIENTS THURSDAY:\n Ingredients lunch: %1$s \n Ingredients dinner: %2$s \n\n</string>
+    <string name="shopping_list_friday">INGREDIENTS FRIDAY:\n Ingredients lunch: %1$s \n Ingredients dinner: %2$s \n\n</string>
+    <string name="ingredients_lunch">Ingredients lunch</string>
+    <string name="ingredients_dinner">Ingredients dinner</string>
+    <string name="monday_lunch_menu">Monday lunch menu</string>
+    <string name="monday_dinner_menu">Monday dinner menu</string>
+    <string name="tuesday_lunch_menu">Tuesday lunch menu</string>
+    <string name="tuesday_dinner_menu">Tuesday dinner menu</string>
+    <string name="wednesday_lunch_menu">Wednesday lunch menu</string>
+    <string name="wednesday_dinner_menu">Wednesday dinner menu</string>
+    <string name="thursday_lunch_menu">Thursday lunch menu</string>
+    <string name="thursday_dinner_menu">Thursday dinner menu</string>
+    <string name="friday_lunch_menu">Friday lunch menu</string>
+    <string name="friday_dinner_menu">Friday dinner menu</string>
+</resources>

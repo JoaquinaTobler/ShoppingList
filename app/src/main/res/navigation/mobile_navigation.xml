@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2021 The Android Open Source Project.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/mobile_navigation"
+app:startDestination="@id/startFragment">
+
+
+<fragment
+    android:id="@+id/startFragment"
+    android:name="com.example.lunchtray.ui.order.StartFragment"
+    android:label="weekly menu"
+    tools:layout="@layout/fragment_start">
+    <action
+        android:id="@+id/action_startFragment_to_chooseLunchFragment"
+        app:destination="@id/chooseLunchFragment" />
+    <action
+        android:id="@+id/action_startFragment_to_tuesdayLunchFragment"
+        app:destination="@id/tuesdayLunchFragment" />
+    <action
+        android:id="@+id/action_startFragment_to_wednesdayLunchFragment"
+        app:destination="@id/wednesdayLunchFragment" />
+    <action
+        android:id="@+id/action_startFragment_to_thursdayLunchFragment"
+        app:destination="@id/thursdayLunchFragment" />
+    <action
+        android:id="@+id/action_startFragment_to_fridayLunchFragment"
+        app:destination="@id/fridayLunchFragment" />
+</fragment>
+<fragment
+    android:id="@+id/chooseLunchFragment"
+    android:name="com.example.lunchtray.ui.order.ChooseLunchFragment"
+    android:label="Choose Monday Lunch"
+    tools:layout="@layout/fragment_choose_lunch" >
+    <action
+        android:id="@+id/action_chooseLunchFragment_to_startFragment"
+        app:destination="@id/startFragment" />
+    <action
+        android:id="@+id/action_chooseLunchFragment_to_chooseDinnerFragment"
+        app:destination="@id/chooseDinnerFragment" />
+</fragment>
+    <fragment
+        android:id="@+id/chooseDinnerFragment"
+        android:name="com.example.lunchtray.ui.order.ChooseDinnerFragment"
+        android:label="Choose Monday Dinner"
+        tools:layout="@layout/fragment_choose_dinner" >
+        <action
+            android:id="@+id/action_chooseDinnerFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_chooseDinnerFragment_to_chooseLunchFragment"
+            app:destination="@id/chooseLunchFragment" />
+        <action
+            android:id="@+id/action_chooseDinnerFragment_to_startFragment2"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_chooseDinnerFragment_to_chooseLunchFragment2"
+            app:destination="@id/chooseLunchFragment" />
+        <action
+            android:id="@+id/action_chooseDinnerFragment_to_mondayResumeFragment"
+            app:destination="@id/mondayResumeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fridayLunchFragment"
+        android:name="com.example.lunchtray.ui.order.FridayLunchFragment"
+        android:label="Choose Friday Lunch"
+        tools:layout="@layout/fragment_friday_lunch" >
+        <action
+            android:id="@+id/action_fridayLunchFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_fridayLunchFragment_to_fridayDinnerFragment"
+            app:destination="@id/fridayDinnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tuesdayLunchFragment"
+        android:name="com.example.lunchtray.ui.order.TuesdayLunchFragment"
+        android:label="Choose Tuesday Lunch"
+        tools:layout="@layout/fragment_tuesday_lunch" >
+        <action
+            android:id="@+id/action_tuesdayLunchFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_tuesdayLunchFragment_to_tuesdayDinnerFragment"
+            app:destination="@id/tuesdayDinnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thursdayLunchFragment"
+        android:name="com.example.lunchtray.ui.order.ThursdayLunchFragment"
+        android:label="Choose Thursday Lunch"
+        tools:layout="@layout/fragment_thursday_lunch" >
+        <action
+            android:id="@+id/action_thursdayLunchFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_thursdayLunchFragment_to_thursdayDinnerFragment"
+            app:destination="@id/thursdayDinnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wednesdayLunchFragment"
+        android:name="com.example.lunchtray.ui.order.WednesdayLunchFragment"
+        android:label="Choose Wednesday Lunch"
+        tools:layout="@layout/fragment_wednesday_lunch" >
+        <action
+            android:id="@+id/action_wednesdayLunchFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_wednesdayLunchFragment_to_wednesdayDinnerFragment"
+            app:destination="@id/wednesdayDinnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tuesdayDinnerFragment"
+        android:name="com.example.lunchtray.ui.order.TuesdayDinnerFragment"
+        android:label="Choose Tuesday Dinner"
+        tools:layout="@layout/fragment_tuesday_dinner" >
+        <action
+            android:id="@+id/action_tuesdayDinnerFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_tuesdayDinnerFragment_to_tuesdayLunchFragment"
+            app:destination="@id/tuesdayLunchFragment" />
+        <action
+            android:id="@+id/action_tuesdayDinnerFragment_to_tuesdayResumeFragment"
+            app:destination="@id/tuesdayResumeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wednesdayDinnerFragment"
+        android:name="com.example.lunchtray.ui.order.WednesdayDinnerFragment"
+        android:label="Choose Wednesday Dinner"
+        tools:layout="@layout/fragment_wednesday_dinner" >
+        <action
+            android:id="@+id/action_wednesdayDinnerFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_wednesdayDinnerFragment_to_wednesdayLunchFragment"
+            app:destination="@id/wednesdayLunchFragment" />
+        <action
+            android:id="@+id/action_wednesdayDinnerFragment_to_wednesdayResumeFragment"
+            app:destination="@id/wednesdayResumeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thursdayDinnerFragment"
+        android:name="com.example.lunchtray.ui.order.ThursdayDinnerFragment"
+        android:label="Choose Thursday Dinner"
+        tools:layout="@layout/fragment_thursday_dinner" >
+        <action
+            android:id="@+id/action_thursdayDinnerFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_thursdayDinnerFragment_to_thursdayLunchFragment"
+            app:destination="@id/thursdayLunchFragment" />
+        <action
+            android:id="@+id/action_thursdayDinnerFragment_to_thursdayLunchFragment2"
+            app:destination="@id/thursdayLunchFragment" />
+        <action
+            android:id="@+id/action_thursdayDinnerFragment_to_thursdayResumeFragment"
+            app:destination="@id/thursdayResumeFragment" />
+        <action
+            android:id="@+id/action_thursdayDinnerFragment_to_thursdayResumeFragment2"
+            app:destination="@id/thursdayResumeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fridayDinnerFragment"
+        android:name="com.example.lunchtray.ui.order.FridayDinnerFragment"
+        android:label="Choose Friday Dinner"
+        tools:layout="@layout/fragment_friday_dinner" >
+        <action
+            android:id="@+id/action_fridayDinnerFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_fridayDinnerFragment_to_fridayLunchFragment"
+            app:destination="@id/fridayLunchFragment" />
+        <action
+            android:id="@+id/action_fridayDinnerFragment_to_fridayResumeFragment"
+            app:destination="@id/fridayResumeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mondayResumeFragment"
+        android:name="com.example.lunchtray.ui.order.MondayResumeFragment"
+        android:label="Shopping List Monday"
+        tools:layout="@layout/fragment_resume_monday" >
+        <action
+            android:id="@+id/action_mondayResumeFragment_to_chooseDinnerFragment"
+            app:destination="@id/chooseDinnerFragment" />
+        <action
+            android:id="@+id/action_mondayResumeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tuesdayResumeFragment"
+        android:name="com.example.lunchtray.ui.order.TuesdayResumeFragment"
+        android:label="Shopping List Tuesday"
+        tools:layout="@layout/fragment_resume_tuesday" >
+        <action
+            android:id="@+id/action_tuesdayResumeFragment_to_tuesdayDinnerFragment"
+            app:destination="@id/tuesdayDinnerFragment" />
+        <action
+            android:id="@+id/action_tuesdayResumeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wednesdayResumeFragment"
+        android:name="com.example.lunchtray.ui.order.WednesdayResumeFragment"
+        android:label="Shopping List Wednesday"
+        tools:layout="@layout/fragment_resume_wednesday" >
+        <action
+            android:id="@+id/action_wednesdayResumeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_wednesdayResumeFragment_to_wednesdayDinnerFragment"
+            app:destination="@id/wednesdayDinnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thursdayResumeFragment"
+        android:name="com.example.lunchtray.ui.order.ThursdayResumeFragment"
+        android:label="Shopping List Thursday"
+        tools:layout="@layout/fragment_resume_thursday" >
+        <action
+            android:id="@+id/action_thursdayResumeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_thursdayResumeFragment_to_thursdayDinnerFragment"
+            app:destination="@id/thursdayDinnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fridayResumeFragment"
+        android:name="com.example.lunchtray.ui.order.FridayResumeFragment"
+        android:label="Shopping List Friday"
+        tools:layout="@layout/fragment_resume_friday" >
+        <action
+            android:id="@+id/action_fridayResumeFragment_to_fridayDinnerFragment"
+            app:destination="@id/fridayDinnerFragment" />
+        <action
+            android:id="@+id/action_fridayResumeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+</navigation>
+
+
