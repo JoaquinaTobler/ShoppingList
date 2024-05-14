@@ -1,28 +1,34 @@
-Lunch Tray - Starter Code
-==================================
+Shopping List App
+===================================
 
-Starter code for the third independent project for Android Basics in Kotlin
-
-Introduction
-------------
-
-This is the starter code for the Lunch Tray app project. This project is an opportunity for you to
-demonstrate the concepts you learned in Unit 3 of Android Basics in Kotlin.
-
-Pre-requisites
+Overview
 --------------
 
-- Complete Unit 3 of Android Basics in Kotlin
+Language
+--------------
+Kotlin
+
+Screenshots
+--------------
+<img src="./screenshots/Home.png" width="45%" height="45%">&ensp;<img src="./screenshots/MondayLunch.png" width="45%" height="45%">
+
+<img src="./screenshots/ShoppingList.png" width="45%" height="45%">&ensp;<img src="./screenshots/ShoppingListSMS.png" width="45%" height="45%">
+
+Purpose
+--------------
+This code demonstrates how to implement:
+
+
+
+Other tools used:
+
 
 Getting Started
 ---------------
 
-1. Download the starter code
-2. Open the project in Android Studio
-3. Complete the project in accordance with the app requirements
+1. Download and run the app.
 
-Tips
-----
 
-- Use the provided tests to ensure your app is running as expected
-- DO NOT ALTER THE PROVIDED TESTS
+## Developed By
+
+Joaquina Tobler
